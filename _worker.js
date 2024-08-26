@@ -3,9 +3,9 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = 'uuid';
+let userID = 'de90c756-1e2b-45dc-89d7-5fc9e482e0dc';
 
-const พร็อกซีไอพีs = ['proxyip'];
+const พร็อกซีไอพีs = ['8.222.164.209'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -14,7 +14,7 @@ let พร็อกซีไอพี = พร็อกซีไอพีs[Math.
 // ipv6 พร็อกซีไอพี example remove comment to use
 // let พร็อกซีไอพี = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
 
-let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://dns.google/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is invalid');
